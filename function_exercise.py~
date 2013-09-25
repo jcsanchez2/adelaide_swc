@@ -1,0 +1,16 @@
+import sys
+def dnastats(filename):
+    data = open (filename,'r')
+    line = data.readline()
+    seqcount = 0
+    while line !='':
+        line = line.rstrip()
+        if line.startswith('>'):
+            print 'name is :' , line       
+        elif line.startswith('A' or 'G' or 'T' or 'C'):
+            print line        
+        line = data.readline()
+
+
+
+print dnastats('dnas.fasta')

@@ -1,0 +1,13 @@
+import sys
+
+def dnastart(seq,prefix):
+    return seq[0:len(prefix)] == prefix 
+
+def test_first():
+    assert dnastart('atgact','at')
+
+def test_start_itself():
+    dna= 'ACTGATG'
+    assert dnastart(dna,dna)
+
+

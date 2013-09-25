@@ -1,0 +1,9 @@
+import sys
+string = 'ATGACTGNATACCTAGGAACATACNNTGACTAATAG'
+def dnafun(seq):
+    seq.replace('N','')    
+    Gs = seq.count('G')
+    Cs = seq.count('C')
+    return float((Gs + Cs)) / len(seq.replace('N',''))
+
+print dnafun(string)
