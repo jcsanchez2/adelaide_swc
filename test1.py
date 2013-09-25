@@ -1,5 +1,5 @@
 import sys
-
+###Testing git branches
 string = 'ATGACTGACCAATGACCACTA'
 
 def test1(seq,prefix):
